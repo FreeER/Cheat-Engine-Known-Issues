@@ -1,0 +1,24 @@
+https://i.imgur.com/kmzuUit.png
+ 
+WhiteSnoop - Today at 6:59 PM
+@DB how come dbvm says 'dark64 loaded' but still crash when I actually put it to use. Is that the Intel stuff you were talking about?
+DB - Today at 7:00 PM
+yes
+WhiteSnoop - Today at 7:00 PM
+Alrite
+I love the earrape tho when I crash
+Whatever sound was playing. Trtrtrtrtrtrrrrrrrrrr
+DB - Today at 7:01 PM
+best load dbvm as early as possible.  E.g before windows boots(edited)
+WhiteSnoop - Today at 7:02 PM
+Thanks db for me loving them ytp's
+Yeah but how
+Burn it to disc?
+DB - Today at 7:02 PM
+yes, the vmdisk.img can be converted to a bootable cd-rom or usb
+but your system must have been setup as legacy mode, not uefi (not in the one with 6.7 at least)
+
+...
+
+ DB - Today at 7:06 PM
+next version dbvm will support uefi boot though

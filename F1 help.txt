@@ -1,0 +1,2 @@
+F1 opens CE help, can't use for hotkeys. Execute lua 
+if cheatEngineIs64Bit() then writeBytesLocal('HtmlHelpA', 0xC3) else writeBytesLocal('HtmlHelpA', 0xC2, 0x10, 0x00) end

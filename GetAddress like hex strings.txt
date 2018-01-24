@@ -1,0 +1,10 @@
+```lua
+--getAddress / GetAddressSafe like hex strings not decimal values :)
+addr = 0x00423d7c
+hexAddr = ('%x'):format(addr)
+print(addr, hexAddr)
+print(getAddress(addr), getAddress(hexAddr))
+```
+
+4341116 423d7c 
+70521110 4341116

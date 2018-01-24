@@ -1,0 +1,25 @@
+https://i.imgur.com/Myf13Z1.png
+
+@DB the reserve instructions eg. resd # resd # etc. aren't supposed to change memory right? Using CE 6.7 it's zeroing the memory for me
+simple example:
+[ENABLE]
+globalalloc(test,4)
+test:
+resd 1
+[DISABLE]
+
+
+enable to have test allocated, change value at test, disable and enable again and test will become 0 the same as if it was dd 0 instead of resd 1...
+jungletek - Yesterday at 10:39 PM
+according to a quick google, those are supposed to declare uninitialized storage space
+is allocated memory via CE automatically init'ed?
+FreeER - Yesterday at 10:44 PM
+yeah, on alloc it's zeroed, that's fine and actually what I want when my script is enabled the first time, however when it's enabled the second time I don't want the memory to change (it's not deallocated and realloacted for that reason, using globalalloc) but... it does(edited)
+It's not a big deal in this case, was just going to let people enable and disable the main hook without losing what flags had been set (gamemaker game, single instruction affects multiple unrelated values), I could still do that by using offsets rather than labels but I was pretty sure the res* should work so when it didn't...
+jungletek - Yesterday at 10:52 PM
+ah, yeah... that seems... unexpected :smile:
+January 12, 2018
+DB - Today at 3:11 AM
+yeah it shouldn't.  For now just use db * * * *(edited)
+👍1
+

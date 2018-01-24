@@ -1,0 +1,7 @@
+process/getOpenedProcessID() do not update when the process is closed, workaround using the following function to check:
+
+function processStillAttached() return getProcesslist()[getOpenedProcessID()] ~= nil end
+
+alternative by DB, probably more efficient (https://i.imgur.com/ZVPKpvL.png):
+
+function processStillAttached() return readBytes(process,1) ~= nil end

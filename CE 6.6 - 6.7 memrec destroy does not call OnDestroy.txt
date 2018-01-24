@@ -1,0 +1,7 @@
+https://i.imgur.com/Wr5zHK3.png
+FreeER - Today at 7:20 AM
+memoryrecord.destroy() does not call OnDestroy, memoryrecord.delete() does. So use delete.(edited)
+actually, @DB is that intended or just kind of accidental from how the code got written? Because most things seem to use just destroy and delete isn't mentioned in the celua(edited)
+DB - Today at 8:08 AM
+it's a bug
+in 6.5 it functions as expected
