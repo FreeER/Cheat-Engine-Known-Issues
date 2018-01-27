@@ -1,2 +1,2 @@
-CE 6.7 (fixed) https://cdn.discordapp.com/attachments/315912868623024138/363394643389448193/unknown.png | https://i.imgur.com/X0rjkAj.png
+https://cdn.discordapp.com/attachments/315912868623024138/363394643389448193/unknown.png | https://i.imgur.com/X0rjkAj.png
 offsets can sometimes be used as decimal in address list but hex in "Address change" window, simple workaround: always use hex offsets with 0x prefix

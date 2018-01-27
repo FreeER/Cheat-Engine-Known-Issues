@@ -1,0 +1,2 @@
+work around by creating it yourself (position,id,description whatever)
+local memrem = getAddressList().getMemoryRecordByID(the id)

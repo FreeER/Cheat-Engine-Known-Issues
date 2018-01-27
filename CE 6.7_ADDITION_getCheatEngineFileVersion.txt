@@ -1,0 +1,7 @@
+-- work around if getFileVersion exists (tested CE 6.6)
+function getCheatEngineFileVersion()
+  local cepid = executeCodeLocal('GetProcessId',-1) -- getCheatEngineProcessID also does not exist in 6.6
+  local cename = getProcesslist()[cepid]
+  return getFileVersion(getCheatEngineDir() .. cename)
+end
+
