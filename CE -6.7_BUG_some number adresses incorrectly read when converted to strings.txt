@@ -1,0 +1,14 @@
+https://github.com/cheat-engine/cheat-engine/issues/300
+getAddress(Safe) and memrec.Address incorrectly convert numbers to hex strings, eg 111 becomes '111' = 0x111 not 0x6F
+
+general workaround: convert number addresses to hex strings
+
+-- getAdress workaround
+local originalGA=getAddress
+function getAddress(v)
+  if type(v)=='number' then
+    return v
+  else
+    return originalGA(v)
+  end
+end
