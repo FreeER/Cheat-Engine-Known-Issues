@@ -1,0 +1,4 @@
+https://forum.cheatengine.org/viewtopic.php?p=5741249#5741249
+createForm'ed forms apparently stay on top of the window that has focus at the time it's shown, and apparently PopupMode is not exposed to lua 
+
+what you can do instead is create the form using the form designer and then load that form ( createFormFromFile ) 
